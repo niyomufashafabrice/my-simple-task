@@ -1,0 +1,223 @@
+.masecx{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.downldIcon{
+    background-color: #1C83C0;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 13rem;
+}
+.contents h1{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 800;
+}
+.contents{
+/* background-color: yellowgreen; */
+width: 353px;
+padding-left: 1rem;
+padding-right: 1rem;
+margin-top: -97px;
+position: static;
+height: 67px;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.icon11{
+    width: 353px;
+}
+.icon11 svg{
+    height: 124px;
+    width: 176px;
+}
+
+/* */
+/* ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+  ol li:before {
+    color: #e75204;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+  } */
+
+  /* */
+  /* ol {
+    counter-reset: item; 
+  }
+  
+  ol li {
+    list-style: none; 
+    position: relative; 
+    padding-left: 30px; 
+  }
+  
+  ol li::before {
+    counter-increment: item; 
+    content: counter(item); 
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: lightblue; 
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+  }
+  
+  
+  ol li:nth-child(1)::before {
+    background-color: lightblue;
+  }
+  
+  ol li:nth-child(2)::before {
+    background-color: lightgreen;
+  }
+  
+  ol li:nth-child(3)::before {
+    background-color: lightcoral;
+  } */
+  
+  /*  */
+
+  ol {
+    counter-reset: list-counter; /* Reset counter for the list */
+    list-style: none; /* Remove default numbers */
+    padding-left: 0;
+  }
+  
+  ol li {
+    counter-increment: list-counter; /* Increment counter */
+    margin-bottom: 10px;
+    position: relative; /* So the number and background stay in place */
+    padding-left: 30px; /* Space for the number background */
+  }
+  
+  ol li::before {
+    content: counter(list-counter) " "; /* Add custom numbers */
+    background-color: lightblue; /* Background color for the number */
+    color: white; /* Text color for the number */
+    padding: 1px 7px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+   
+  /*  */
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .column {
+    flex: 1 1 30%; /* Each column takes up 30% of the width */
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    display: none; /* Initially hidden */
+  }
+
+  .column.visible {
+    display: block; /* Show when the class 'visible' is added */
+  }
+
+  /* Button styling */
+  .read-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none; /* Hide additional columns */
+}
+
+
+/*  */
+
+.save-btn{
+    font-size: 12px;
+    color: white;
+    background-color: rgb(7, 51, 51);
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none!important;
+    display: grid;
+    place-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.loader{
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    border-right-color:white ;
+    animation: an1 1s ease infinite;
+}
+@keyframes an1 {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+/*  */
+
+.postss{
+  height: 100px;
+  width: 200px;
+}
+.postss img{
+  object-fit: contain;
+  width: 100%;
+  
+}
+.subb{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  height: 600px;
+  /* background-color: aqua; */
+  overflow: hidden;
+  border: 2px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+  
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.contents{
+  height: auto;
+  margin-bottom: 3rem;
+}
